@@ -1,0 +1,5 @@
+# Ignore environment files
+/AdBot/
+
+# Ignore the .env file 
+.env

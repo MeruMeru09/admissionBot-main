@@ -1,0 +1,56 @@
+## MAIN INFO ##
+pagistart kay create mo new environment didto idagan
+
+REPO NI NKO
+
+## How to Create Environment :  Run sa Terminal##
+python -m venv nameofENV
+eg: python -m venv AdBot
+
+Pang activate:
+WIN : myenv\Scripts\activate
+LINUX/OS: source myenv/bin/activate
+eg: AdBot\Scripts\activate
+
+if gagamit ka'g CONDA:
+conda create --name myenv
+conda create --name myenv python=3.9 -- pang specify
+
+Pang activate:
+conda activate myenv
+
+
+## Needed To DO in the terminal ##
+pip install google-generativeai streamlit python-dotenv langdetect nltk
+
+
+## Version Needed ##
+python 3.9+ daw dapat 
+python --version
+version nko is : Python 3.12
+
+
+since public atong gHub Repo  :
+  - create ".env" file
+  - create API_KEY = "your-api-key"
+
+ ## CONSOLE BASED INFO ##
+Irun ni before ang main.py IF using console :
+Powershell:
+$env:API_KEY = "your-api-key"
+
+pero kung cmd ka kay 
+set API_KEY = "your-api-key"
+
+ani ka magrun (for the console):
+python main.py
+
+ ## ADDITIONAL INFO ##
+kita nyo yang .gitignore:
+change mo lang into the folder of ur environment. 
+In my case, AdBot.
+
+## GUI INFO ##
+To run:
+strealit run file/path
+eg: streamlit run d:/AdmissionBot/admissionBot/main.py
