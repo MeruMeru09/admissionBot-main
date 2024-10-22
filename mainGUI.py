@@ -108,7 +108,7 @@ def handle_conversation(csv_path):
         with st.chat_message("user", avatar='https://raw.githubusercontent.com/MeruMeru09/admissionBot-main/refs/heads/main/Icons/student.ico'): # we can change this. this is the icon for the human
             st.markdown(user_input)
 
-        # Query the Gemini API with the user input
+        # Query the Gemini API with the user inputg
         result = query_gemini_api(csv_path, user_input)
 
         # Display assistant response in chat message container
@@ -127,7 +127,7 @@ def main():
     st.write("Hello, how may I help you?")
 
     # Provide the path to your CSV file here
-    csv_path = "docs\scrapped_FAQs.csv"
+    csv_path = "docs/scrapped_FAQs.csv"
     handle_conversation(csv_path)
     
 # to run main
